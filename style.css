@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16;
+	font-family: "Roboto", sans-serif;
+}
+
+.header {
+	width: 100%;
+	margin-bottom: 4rem;
+}
+
+.head_con {
+	max-width: 75rem;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.2rem 0.7rem;
+}
+.head_con a {
+	text-decoration: none;
+	color: #000;
+}
+.head_searchbox {
+	background-color: #cecece;
+	border-radius: 50px;
+	padding: 0.3125rem 0.625rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.head_searchbox input {
+	border: none;
+	outline: none;
+	background: transparent;
+	padding-right: 1.875rem;
+}
+.head_navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 0.625rem;
+}
+.icon {
+	display: none;
+}
+/* Slideshow container */
+.slideshow-container {
+	max-width: 62.5rem;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -1.375rem;
+	padding: 1rem;
+	color: white;
+	font-weight: bold;
+	font-size: 1.125rem;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 0.9375rem;
+	padding: .5rem 0.75rem;
+	position: absolute;
+	bottom: .5rem;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 0.75rem;
+	padding: .5rem 0.75rem;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 0.9375rem;
+	width: 0.9375rem;
+	margin: 0 0.125rem;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+.cards {
+	max-width: 75rem;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 4rem;
+}
+.cards_box {
+	margin: 1.875rem 0.0625rem;
+	transition: all .5s ease-in-out;
+}
+.cards h1 {
+	position: absolute;
+}
+.cards_box:hover {
+	.cards_text {
+		opacity: 1;
+	}
+}
+.cards_box.one:hover {
+	transform: translate(-1.25rem, -1.25rem);
+}
+.cards_box.two:hover {
+	transform: translate(1.25rem, -1.25rem);
+}
+.cards_box.three:hover {
+	transform: translate(-1.25rem, 1.25rem);
+}
+.cards_box.four:hover {
+	transform: translate(1.25rem, 1.25rem);
+}
+.cards_text {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.625rem;
+	opacity: 0;
+	transition: all .5s ease-in-out;
+}
+.cards_text a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #0071E3;
+	padding: 0.5rem 0.625rem;
+	border-radius: 20px;
+	transition: all .5s ease-in-out;
+}
+.cards_text a:hover {
+	background-color: #fff;
+	color: black;
+}
+#cards_text3 {
+	margin-top: 3.125rem;
+}
+#cards_text4 {
+	margin-top: 3.125rem;
+}
+
+.linkToWallpaper {
+	max-width: 75rem;
+	margin: 4rem auto;
+	position: relative;
+	border: 3px solid gray;
+	padding: 1.25rem;
+}
+.linkToWallpaper h1 {
+	font-size: 5rem;
+	margin-bottom: 3rem;
+}
+.linkToWallpaper .link_img {
+	width: 45%;
+	margin: 1.25rem;
+	transition: all .5s ease-in-out;
+}
+.linkToWallpaper .link_img:hover {
+	transform: scale(1.1);
+}
+.arrow {
+	width: 6.25rem;
+	position: absolute;
+	left: -6.25rem;
+	top: 12.5rem;
+}
+.linkToWallpaper a {
+	background-color: #0071E3;
+	padding: 1.25rem;
+	border-radius: 20px;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: -9.375rem;
+	right: -13.125rem;
+	transition: all .5s ease
+}
+.linkToWallpaper a:hover {
+	transform: scale(1.2);
+}
+.footer {
+	width: 100%;
+	height: 10vh;
+	background-color:#bbb;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+@media (max-width: 1200px) {
+	.icon {
+		display: block;
+	}
+	.head_navbar ul {
+
+		display: none;
+	}	
+	.head_navbar ul li {
+		display: inline-block;
+		list-style: none;
+		margin: 0 0.625rem;
+	}
+	
+	.head_navbar ul li a {
+		text-decoration: none;
+		color: #111;
+	}
+	
+	.head_navbar ul li a.icon {
+		background: black;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+}
+@media (max-width: 1220px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (max-width: 1080px) {
+	html {
+		font-size: 13px;
+	}
+}
+@media (max-width: 900px) {
+	html {
+		font-size: 12px;
+	}
+}
+@media (max-width: 690px) {
+	html {
+		font-size: 11px;
+	}
+}

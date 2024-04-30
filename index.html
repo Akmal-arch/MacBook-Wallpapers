@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="head_con">
+			<a href="index.html"><h1>macOS Wallpapers</h1></a>
+			<div class="head_searchbox">
+				<span id="one" class="material-symbols-outlined">search</span>
+				<input type="text" placeholder="Search here...">
+				<span id="two" class="material-symbols-outlined">search</span>
+			</div>
+			<div class="head_navbar">
+				<ul id="myLinks">
+					<li><a href="#">Wallpapers</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<span class="material-symbols-outlined">menu</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="images/macOS X El Capitan/el capitan2.jpg" style="width:100%">
+			<div class="text">El Capitan</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="images/macOS X Yosemite/Yosemite 1.jpg" style="width:100%">
+			<div class="text">Yosemite</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="images/sonoma/sonoma 1.jpg" style="width:100%">
+			<div class="text">Sonoma</div>
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+
+	<div class="cards">
+		<h1>Macbooks</h1>
+		<div class="cards_box one">
+			<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708367688034"
+				style="width: 25rem;" alt="">
+			<div class="cards_text">
+				<p>Macbook Air M3 13-inch</p>
+				<a href="">Learn more</a>
+			</div>
+		</div>
+		<div class="cards_box two">
+			<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830200"
+				style="width: 25rem;" alt="">
+			<div class="cards_text">
+				<p>Macbook Pro M3 14-inch</p>
+				<a href="">Learn more</a>
+			</div>
+		</div>
+		<div class="cards_box three">
+			<img src="https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/specs/13-inch/mba_13_hero__f9tthfkojjiq_large.jpg"
+				style="width: 25rem;" alt="">
+			<div class="cards_text" id="cards_text3">
+				<p>Macbook Air M2 15-inch</p>
+				<a href="">Learn more</a>
+			</div>
+		</div>
+		<div class="cards_box four">
+			<img src="https://www.apple.com/v/macbook-pro-14-and-16/e/images/specs/macbook_pro_14_inch__41iqg8l6hsyi_large.jpg"
+				style="width: 25rem;" alt="">
+			<div class="cards_text" id="cards_text4">
+				<p>Macbook Pro M2 14-inch</p>
+				<a href="">Learn more</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="linkToWallpaper">
+		<h1>Get mac Wallpapers</h1>
+		<img class="arrow" src="images/arrow.jpg" alt="">
+		<img class="link_img" src="images/macOS X Yosemite/Yosemite 3.jpg" alt="">
+		<img class="link_img" src="images/macOS X El Capitan/el capitan1.jpg" alt="">
+		<img class="link_img" src="images/macOS X Yosemite/Yosemite 5.jpg" alt="">
+		<a href="wallpapers.html">Get Wallpapers</a>
+	</div>
+	<div class="footer">
+		<p>Norqulov Akmal</p>
+		<p>&copyCopyright</p>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
